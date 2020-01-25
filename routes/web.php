@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/teste', function () {
-    return view('teste');
-});
+Route::get('teste', 'Crawler\CrawlerController@index');
