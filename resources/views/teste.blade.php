@@ -72,11 +72,8 @@
 
             </div>
             <div class="results">
-                <?php
-                echo '<pre>';
-                    print_r($data);
-                echo '</pre>';
-                ?>
+                {{dd($data)}}
+
             </div>
     </body>
 </html>
