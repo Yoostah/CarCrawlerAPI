@@ -65,16 +65,13 @@ li.nav-item > a{
     background:#3d434a;
     border-left: 0;
     flex: 1;
-
+    overflow: scroll;
 }
 .code {
     font-family: monospace;
     cursor: default;
     background-color: transparent;
     position: relative;
-    padding: 20px 10px;
-    padding-right: 10px;
-    padding-left: 10px;
     display: block;
     font-size: 12px;
 }
