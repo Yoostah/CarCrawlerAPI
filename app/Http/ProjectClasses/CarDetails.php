@@ -15,6 +15,9 @@ class CarDetails {
     private $color;
     private $plate;
     private $acceptsExchanges;
+    private $carFeatures = array();
+    private $carPhotos = array();
+    private $carInformation;
 
     public function __construct($node) {
         $this->setName($node);
@@ -28,6 +31,9 @@ class CarDetails {
         $this->setColor($node);
         $this->setPlate($node);
         $this->setAcceptsExchanges($node);
+        $this->setCarFeatures($node);
+        $this->setCarPhotos($node);
+        $this->setCarInformation($node);
     }
 
     public function getName() {
@@ -116,6 +122,41 @@ class CarDetails {
 
 	private function setAcceptsExchanges($node) {
 		$this->acceptsExchanges = $node->filter('span[title="Aceita troca?"]')->text();
+    }
+
+    public function getCarFeatures() {
+		return $this->carFeatures;
+	}
+
+	private function setCarFeatures($node) {
+        $childs = $node->filter('div.full-features')->children('ul')->children('li');
+
+        $childs->each(function ($feature) {
+            array_push($this->carFeatures, $feature->text());
+        });
+	}
+
+	public function getCarPhotos() {
+
+		return $this->carPhotos;
+	}
+
+	private function setCarPhotos($node) {
+		$childs = $node->filter('div.gallery-thumbs')->children('ul')->children('li');
+
+        $childs->each(function ($photo) {
+            $img = $photo->filter('img')->attr('data-src');
+            if($img !== '')
+                array_push($this->carPhotos, $photo->filter('img')->attr('data-src'));
+        });
+	}
+
+	public function getCarInformation() {
+		return $this->carInformation;
+	}
+
+	private function setCarInformation($node) {
+		$this->carInformation = $node->filter('p.description-print')->text();
 	}
 
     public function getCarDetails(){
@@ -130,7 +171,10 @@ class CarDetails {
             'fuelType' => $this->getFuelType(),
             'color' => $this->getColor(),
             'plate' => $this->getPlate(),
-            'acceptsExchanges' => $this->getAcceptsExchanges()
+            'acceptsExchanges' => $this->getAcceptsExchanges(),
+            'features' => $this->getCarFeatures(),
+            'photos' => $this->getCarPhotos(),
+            'information' => $this->getCarInformation()
         ];
     }
 
