@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('teste', 'Crawler\CrawlerController@index');
+Route::get('carcrawler', 'Documentation\DocumentationController@index')->name('index');
+Route::get('endpoints', 'Documentation\DocumentationController@documentation')->name('endpoints');
+Route::get('endpoints/search', 'Documentation\DocumentationController@search')->name('endpoints.search');
+Route::get('endpoints/details', 'Documentation\DocumentationController@details')->name('endpoints.details');
