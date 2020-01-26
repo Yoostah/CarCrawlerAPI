@@ -13,4 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/pesquisar', 'Crawler\CrawlerController@index');
+Route::get('/search', 'Crawler\CrawlerController@index');
+Route::get('/details', 'Crawler\CrawlerController@show');

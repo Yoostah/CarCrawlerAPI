@@ -20,7 +20,17 @@ class CrawlerController extends Controller
         $response = $crawler->crawl();
 
         if(count($response))
-            return $response;
+        return $response;
+    }
+
+    protected function show(Request $request) {
+        //print_r();
+        $carUrl = $request->get('carUrl');
+        $crawler = new Crawler("https://seminovos.com.br/$carUrl", true);
+        $response = $crawler->crawl();
+
+        if(count($response))
+        return $response;
     }
 
     protected function setFilters($request){

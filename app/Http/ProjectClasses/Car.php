@@ -7,12 +7,12 @@ use App\Http\ProjectClasses\Reseller;
 
 class Car {
 
-    private $name;
-    private $price;
-    private $model;
-    private $features;
-    private $detailsUrl;
-    private $owner;
+    protected $name;
+    protected $price;
+    protected $model;
+    protected $features;
+    protected $detailsUrl;
+    protected $owner;
 
     public function __construct($node) {
         $this->setName($node);
@@ -28,7 +28,7 @@ class Car {
 		return $this->name;
 	}
 
-	public function setName($node) {
+	private function setName($node) {
         $this->name = $node->filter('h2.card-title')->text();
 	}
 
@@ -36,7 +36,7 @@ class Car {
 		return $this->price;
 	}
 
-	public function setPrice($node) {
+	private function setPrice($node) {
 		$this->price = trim(str_replace('R$', '', $node->filter('span.card-price')->text()));
 	}
 
@@ -44,7 +44,7 @@ class Car {
 		return $this->model;
 	}
 
-	public function setModel($node) {
+	private function setModel($node) {
 		$this->model = trim(str_replace('VERSÃO:', '',$node->filter('p.card-subtitle')->text()));
 	}
 
@@ -52,7 +52,7 @@ class Car {
 		return  $this->features;
 	}
 
-	public function setFeatures($node) {
+	private function setFeatures($node) {
         $features = new CarFeatures($node->filter('ul.list-features > li'));
 		$this->features = $features->featuresList();
 	}
@@ -61,7 +61,7 @@ class Car {
 		return $this->detailsUrl;
 	}
 
-	public function setDetailsUrl($node) {
+	private function setDetailsUrl($node) {
         $link = explode('?', $node->filter('div.card-content > a')->attr('href'));
 		$this->detailsUrl = $link[0];
     }
@@ -70,7 +70,7 @@ class Car {
 		return $this->owner;
 	}
 
-	public function setOwner($node) {
+	private function setOwner($node) {
         if($node->filter('img.img-revenda')->count()){
             $owner = new Reseller($node->filter('img.img-revenda'));
             $this->owner = $owner->resellerDetails();
