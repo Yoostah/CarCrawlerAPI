@@ -28,7 +28,7 @@
                                     <div class="description">
                                         <div class="field-description">
                                             <p>Tipo de veículo</p>
-                                            <p>Se não for enviado, a consulta será por carro</p>
+                                            <p>Se este parâmetro não for enviado, a consulta será por carro</p>
                                             <p>Opções: <strong>[carro, moto, caminhao]</strong></p>
                                         </div>
                                     </div>
@@ -70,7 +70,7 @@
                                     <div class="description">
                                         <div class="field-description">
                                             <p>Intervalo de Anos de Fabricação do veículo</p>
-                                            <p>Para utilizar este filtro, é obrigatório o preenchimento do ano inicial OU ano final separados com "-".</p>
+                                            <p>Para utilizar este filtro, é obrigatório o preenchimento de pelo menos o ano inicial OU ano final separados com "-".</p>
                                             <p>Exemplo: [2000-] , [-2020] ou [2018-2020]</p>
                                         </div>
                                     </div>
@@ -85,8 +85,8 @@
                                     <div class="description">
                                         <div class="field-description">
                                             <p>Intervalo de preço do veículo</p>
-                                            <p>Para utilizar este filtro, é obrigatório o preenchimento do preço minimo OU preço máximo separados com "-".</p>
-                                            <p>Os valores devem ser inteiro, sem separadores de milhar</p>
+                                            <p>Para utilizar este filtro, é obrigatório o preenchimento de pelo menos o preço minimo OU preço máximo separados com "-".</p>
+                                            <p>Os valores devem ser inteiros, sem separadores de milhar</p>
                                             <p>Exemplo: [20000-] , [-50000] ou [20000-50000]</p>
                                         </div>
                                     </div>
@@ -101,8 +101,8 @@
                                     <div class="description">
                                         <div class="field-description">
                                             <p>Intervalo de quilometragem do veículo</p>
-                                            <p>Para utilizar este filtro, é obrigatório o preenchimento do valor minimo OU valor máximo separados com "-".</p>
-                                            <p>Os valores devem ser inteiro, sem separadores de milhar</p>
+                                            <p>Para utilizar este filtro, é obrigatório o preenchimento de pelo menos o valor minimo OU valor máximo separados com "-".</p>
+                                            <p>Os valores devem ser inteiros, sem separadores de milhar</p>
                                             <p>Exemplo: [50000-] , [-150000] ou [50000-150000]</p>
                                         </div>
                                     </div>
