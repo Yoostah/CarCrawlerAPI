@@ -15,7 +15,7 @@
             <div class="hub-reference-left">
                 <div class="param-type-header">
                     <span class="label">
-                        <label class="label-name">Efetuar uma busca no website <a href="https://seminovos.com.br/" target="_blank">SEMINIVOSBH</a> e extrair uma listagem
+                        <label class="label-name">Efetuar uma busca no website <a href="https://seminovos.com.br/" style="font-size: 15px" target="_blank"><span>SEMINIVOSBH</span></a> e extrair uma listagem
                             de veículos de acordo com os filtros informados na requisição.
                         </label>
                     </span>
