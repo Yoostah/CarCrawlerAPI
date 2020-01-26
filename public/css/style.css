@@ -54,7 +54,109 @@ li.nav-item > a{
     text-transform: uppercase;
 }
 
+.hub-api{
+    display: flex;
+}
 
+.hub-reference-left {
+    flex: 2;
+}
+.hub-reference-right {
+    background:#3d434a;
+    border-left: 0;
+    flex: 1;
+
+}
+.code {
+    font-family: monospace;
+    cursor: default;
+    background-color: transparent;
+    position: relative;
+    padding: 20px 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: block;
+    font-size: 12px;
+}
+
+.code > pre {
+    display: block;
+    font-size: 87.5%;
+    color:  #fff;
+    font-weight: 500;
+}
+
+code > span.param {
+    color: red;
+    font-weight: 700;
+}
+.code-sample-tabs {
+    background-color:rgba(0,0,0,.2);
+    padding: 0 30px 0 20px;
+    color: #fff;
+    border-bottom: none;
+}
+
+#hub-reference .hub-api .code-sample ul.code-sample-tabs {
+    padding: 0 30px 0 20px;
+    margin: 0;
+    background:  #333840;
+    background-color: rgb(51, 56, 64);
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hub-reference .hub-reference .hub-reference-section .hub-reference-right .hub-reference-results-header .hub-reference-results-header-item.selected {
+    background-color:
+    rgba(0,0,0,.4);
+}
+#hub-reference .hub-reference .hub-reference-section .hub-reference-right .hub-reference-results-header .hub-reference-results-header-item {
+    height: 100%;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 5px 10px;
+    color:
+    #fff;
+}
+a.tabber-tab {
+    color: #0ac2ff;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+#hub-reference .hub-reference .hub-reference-section .hub-reference-right .hub-reference-results-header .hub-reference-results-header-item .fa-circle {
+    font-size: 8px;
+    position: relative;
+    bottom: 1px;
+    margin-right: 1px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 10px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0,0);
+    color: #5bb349;
+}
 form.rjsf {
     margin:0% 3%
    }
@@ -710,3 +812,4 @@ form.rjsf {
      z-index:-1
     }
    }
+
