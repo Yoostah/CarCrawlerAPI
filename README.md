@@ -7,6 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Instructions
+
+- Baixe o código deste repositório, extraia para o diretorio de aplicações do servidor web 
+- Abra o terminal de comandos, aponte para a pasta escolhida e rode o comando [composer install] 
+- Rode o comando [php artisan serve] para que o servidor de desenvolvimento do Laravel seja iniciado 
+- Utilize algum REST client (como o Insomnia) para efetuar requisições para o endereço [localhost:8000/api/] 
+- A documentação das rotas está na aplicação  [localhost:8000/carcrawler]
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
