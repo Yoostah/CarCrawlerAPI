@@ -205,7 +205,7 @@
                         <div class="code-sample-body">
                             <div style="display: block;">
                                 <pre class="tomorrow-night tabber-body" style="display: block;">
-                                <span class="cm-s-tomorrow-night"><strong>https://localhost:8000/api/</strong>{type}{manufacturer}{model}{yearRange}{priceRange}{mileageRange}{status}{origin}{transmission}{perPage}{page}</span>
+                                <span class="cm-s-tomorrow-night"><strong>https://localhost:8000/api/search/</strong>{type}{manufacturer}{model}{yearRange}{priceRange}{mileageRange}{status}{origin}{transmission}{perPage}{page}</span>
                             </pre>
                             </div>
                         </div>
@@ -225,7 +225,7 @@
             <div class="code">
                 <pre>
                     <code>
-                        https://localhost:8000/api/<span class="param">{type}</span>
+                        https://localhost:8000/api/search/<span class="param">{type}</span>
                     </code>
                 </pre>
             </div>
@@ -257,7 +257,7 @@
             <div class="code">
                 <pre>
                     <code>
-                        https://localhost:8000/api/<span class="param">{type}{manufacturer}{model}</span>
+                        https://localhost:8000/api/search/<span class="param">{type}{manufacturer}{model}</span>
                     </code>
                 </pre>
             </div>
@@ -290,7 +290,7 @@
             <div class="code">
                 <pre>
                     <code>
-                        https://localhost:8000/api/{type}{manufacturer}{model}<span class="param">{yearRange}{priceRange}{mileageRange}</span>
+                        https://localhost:8000/api/search/{type}{manufacturer}{model}<span class="param">{yearRange}{priceRange}{mileageRange}</span>
                     </code>
                 </pre>
             </div>
@@ -324,7 +324,7 @@
             <div class="code">
                 <pre>
                     <code>
-                        https://localhost:8000/api/{type}{manufacturer}{model}{yearRange}{priceRange}{mileageRange}<span class="param">{status}{origin}{transmission}</span>
+                        https://localhost:8000/api/search/{type}{manufacturer}{model}{yearRange}{priceRange}{mileageRange}<span class="param">{status}{origin}{transmission}</span>
                     </code>
                 </pre>
             </div>
@@ -357,7 +357,7 @@
             <div class="code">
                 <pre>
                     <code>
-                        https://localhost:8000/api/{type}{manufacturer}{model}{yearRange}{priceRange}{mileageRange}{status}{origin}{transmission}<span class="param">{perPage}{page}</span>
+                        https://localhost:8000/api/search/{type}{manufacturer}{model}{yearRange}{priceRange}{mileageRange}{status}{origin}{transmission}<span class="param">{perPage}{page}</span>
                     </code>
                 </pre>
             </div>

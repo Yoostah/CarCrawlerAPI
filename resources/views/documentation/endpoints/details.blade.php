@@ -47,7 +47,7 @@
                         <div class="code-sample-body">
                             <div style="display: block;">
                                 <pre class="tomorrow-night tabber-body" style="display: block;">
-                                    <span class="cm-s-tomorrow-night"><strong>https://localhost:8000/api/</strong>{carUrl}</span>
+                                    <span class="cm-s-tomorrow-night"><strong>https://localhost:8000/api/details/</strong>{carUrl}</span>
                                 </pre>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
             <div class="code">
                 <pre>
                     <code>
-                        https://localhost:8000/api/<span class="param">{carUrl}</span>
+                        https://localhost:8000/api/details/<span class="param">{carUrl}</span>
                     </code>
                 </pre>
             </div>
